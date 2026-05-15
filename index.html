@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>GSNOOK | Scientific Consulting & Data Analytics</title>
+
+  <meta name="description"
+    content="GSNOOK provides scientific consulting, bioinformatics, biostatistics and One Health data analytics services." />
+
+  <style>
+    :root {
+      --primary: #0f5f78;
+      --secondary: #1fa6bd;
+      --dark: #0b1f33;
+      --light: #f4f8fb;
+      --text: #263238;
+      --muted: #607d8b;
+      --card: #ffffff;
+      --border: #d8e6ec;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--light);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      text-align: center;
+      padding: 90px 24px;
+    }
+
+    .logo {
+      width: 120px;
+      height: 120px;
+      object-fit: contain;
+      background: white;
+      border-radius: 18px;
+      padding: 10px;
+      margin-bottom: 24px;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 14px;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      max-width: 850px;
+      margin: 0 auto 28px;
+      font-size: 1.2rem;
+    }
+
+    .tags {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .tag {
+      border: 1px solid rgba(255, 255, 255, 0.7);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: 0.9rem;
+    }
+
+    nav {
+      background: white;
+      border-bottom: 1px solid var(--border);
+      padding: 16px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--dark);
+      margin: 0 14px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 70px 24px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      color: var(--dark);
+      margin-bottom: 20px;
+    }
+
+    .intro {
+      max-width: 900px;
+      font-size: 1.05rem;
+      color: #334;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 24px rgba(15, 95, 120, 0.08);
+      transition: transform 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: var(--dark);
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: #42515c;
+      font-size: 0.97rem;
+    }
+
+    .specialties {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+
+    .specialty {
+      background: white;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 10px 14px;
+      color: var(--primary);
+      font-size: 0.92rem;
+    }
+
+    .contact-box {
+      background: var(--dark);
+      border-radius: 24px;
+      padding: 55px 24px;
+      text-align: center;
+      color: white;
+    }
+
+    .contact-box h2 {
+      color: white;
+    }
+
+    .contact-box p {
+      margin-bottom: 20px;
+    }
+
+    .contact-box a {
+      color: #7de3f4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 700px) {
+      header h1 {
+        font-size: 2.4rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 6px 8px;
+      }
+
+      .logo {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+
+    <!-- CAMBIA LA RUTA SI TU LOGO ESTÁ EN OTRO SITIO -->
+    <img src="assets/gsnook-logo.png" alt="GSNOOK logo" class="logo">
+
+    <h1>GSNOOK</h1>
+
+    <p>
+      Scientific Consulting & Data Analytics for One Health,
+      Bioinformatics and Environmental Epidemiology.
+    </p>
+
+    <div class="tags">
+      <span class="tag">Bioinformatics</span>
+      <span class="tag">Biostatistics</span>
+      <span class="tag">Epidemiology</span>
+      <span class="tag">One Health</span>
+      <span class="tag">Environmental Health</span>
+      <span class="tag">Zoonotic Diseases</span>
+      <span class="tag">Scientific Data Analysis</span>
+    </div>
+
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#specialties">Specialties</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+
+    <h2>About GSNOOK</h2>
+
+    <p class="intro">
+      GSNOOK is a scientific consulting and data analytics initiative focused on
+      computational biology, epidemiology, environmental health and reproducible
+      scientific workflows.
+      <br><br>
+      The project integrates biological sciences, biostatistics, bioinformatics and
+      One Health perspectives to support research, technical consultancy and
+      evidence-based decision making.
+      <br><br>
+      Areas of interest include environmental epidemiology, zoonotic diseases,
+      aquaculture health, scientific data analysis and biomedical interpretation.
+    </p>
+
+  </section>
+
+  <section id="services">
+
+    <h2>Services</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Scientific consulting</h3>
+        <p>
+          Technical and scientific support for research projects,
+          documentation, data interpretation and evidence-based reporting.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Bioinformatics</h3>
+        <p>
+          Computational workflows and biological data analysis using
+          reproducible scientific methodologies.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Biostatistics</h3>
+        <p>
+          Applied statistical analysis, exploratory data analysis,
+          modeling and scientific interpretation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>One Health analytics</h3>
+        <p>
+          Integration of environmental, animal and human health
+          perspectives through data-driven approaches.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Environmental epidemiology</h3>
+        <p>
+          Analysis of environmental exposure, zoonotic risk,
+          epidemiological patterns and population-level health indicators.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Data visualization</h3>
+        <p>
+          Scientific dashboards, graphical summaries and data visualization
+          for publications, reports and communication.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <section id="specialties">
+
+    <h2>Specialties</h2>
+
+    <div class="specialties">
+
+      <span class="specialty">Bioinformatics</span>
+      <span class="specialty">Biostatistics</span>
+      <span class="specialty">Epidemiology</span>
+      <span class="specialty">One Health</span>
+      <span class="specialty">Environmental Health</span>
+      <span class="specialty">Zoonotic Diseases</span>
+      <span class="specialty">Scientific Data Analysis</span>
+      <span class="specialty">Computational Biology</span>
+      <span class="specialty">Aquaculture Health</span>
+      <span class="specialty">Data Visualization</span>
+      <span class="specialty">Research Consulting</span>
+      <span class="specialty">Python</span>
+      <span class="specialty">R</span>
+      <span class="specialty">SQL</span>
+      <span class="specialty">Power BI</span>
+      <span class="specialty">SPSS</span>
+      <span class="specialty">SAS</span>
+      <span class="specialty">GitHub</span>
+      <span class="specialty">ISO/IEC 17025</span>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <div class="contact-box">
+
+      <h2>Contact</h2>
+
+      <p>
+        Scientific consulting, collaboration opportunities and data analytics support.
+      </p>
+
+      <p>
+
+        <a href="https://www.linkedin.com/company/gsnook/" target="_blank">
+          LinkedIn
+        </a>
+
+        ·
+
+        <a href="https://github.com/gsnook-lab" target="_blank">
+          GitHub
+        </a>
+
+      </p>
+
+    </div>
+
+  </section>
+
+  <footer>
+    © 2026 GSNOOK · Scientific Consulting & Data Analytics
+  </footer>
+
+</body>
+
+</html>
