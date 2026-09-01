@@ -219,7 +219,104 @@
         height: 100px;
       }
     }
-  </style>
+  
+ /* Current research feature */
+
+.research-feature {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 40px;
+    align-items: center;
+
+    margin: 42px 0;
+    padding: 32px;
+
+    background: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(15, 95, 120, 0.08);
+}
+
+.research-feature-text h3 {
+    color: var(--dark);
+    font-size: 1.45rem;
+    line-height: 1.35;
+    margin: 8px 0 18px;
+}
+
+.research-feature-text p {
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.research-label {
+    display: inline-block;
+    padding: 6px 12px;
+
+    background: #e6f6fa;
+    color: var(--primary);
+
+    border-radius: 999px;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+
+.research-feature-image {
+    margin: 0;
+}
+
+.research-feature-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+
+    border-radius: 14px;
+}
+
+.research-feature-image figcaption {
+    margin-top: 9px;
+
+    color: var(--muted);
+    font-size: 0.78rem;
+    line-height: 1.4;
+    text-align: center;
+}
+
+.research-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.research-tags span {
+    padding: 6px 10px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    color: var(--primary);
+    font-size: 0.78rem;
+    background: #f8fcfd;
+}
+
+/* Responsive layout */
+
+@media (max-width: 760px) {
+
+    .research-feature {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 22px;
+    }
+
+}
+ 
+ </style>
+
 </head>
 
 <body>
@@ -299,6 +396,42 @@
   biologically active molecules, including antimicrobial peptides, within a
   broader bioinformatics-driven drug discovery framework.
 </p>
+
+    <div class="research-feature">
+
+  <div class="research-feature-text">
+    <span class="research-label">Current research</span>
+
+    <h3>
+      Genome annotation & biomolecule discovery in
+      <em>Pelophylax lessonae</em>
+    </h3>
+
+    <p>
+      Computational exploration and review of genome annotation,
+      with particular interest in genomic information that may contribute
+      to the identification and characterization of biologically active
+      molecules, including antimicrobial peptides.
+    </p>
+
+    <div class="research-tags">
+      <span>Genome Annotation</span>
+      <span>Peptide Discovery</span>
+      <span>Drug Discovery</span>
+    </div>
+  </div>
+
+  <figure class="research-feature-image">
+    <img
+      src="assets/pelophylax_lessonae.png"
+      alt="Conceptual scientific illustration of Pelophylax lessonae">
+    <figcaption>
+      Conceptual illustration accompanying current genomic research on
+      <em>Pelophylax lessonae</em>.
+    </figcaption>
+  </figure>
+
+</div>
 
   <p>
     This work combines sequence analysis, genome annotation, scientific data
